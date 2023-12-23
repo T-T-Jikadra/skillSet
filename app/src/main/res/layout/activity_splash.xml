@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBE5E5"
+    android:background="#E88383"
     tools:context="._MustHave._Splash">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:text="SkillSet Institute of Computer \n Application, Science, Management \n&amp; Commerce"
+        android:text="new SkillSet Institute of Computer \n Application, Science, Management \n&amp; Commerce"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="21sp"
