@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="65dp"
+                android:text="Complete Your Profile .."
+                android:textAlignment="center"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:divider="?android:attr/listDivider"
+                android:showDividers="middle"
+                android:stretchColumns="1"
+                tools:ignore="UselessParent">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#F7E7FA"
+                        android:paddingVertical="8dp"
+                        android:text="Course Name: "
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/edClg"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="30sp"
+                        android:layout_weight="2"
+                        android:paddingVertical="10dp"
+                        android:paddingStart="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlSymmetry,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="60sp"
+                        android:layout_weight="1"
+                        android:background="#F4C4D5"
+                        android:paddingVertical="8dp"
+                        android:text="Depatrtment Name: "
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/edCourse"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="2"
+                        android:paddingVertical="10dp"
+                        android:paddingStart="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlSymmetry,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#F7E7FA"
+                        android:paddingVertical="8dp"
+                        android:text="Semester: "
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/edSem"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="30sp"
+                        android:layout_weight="2"
+                        android:inputType="number"
+                        android:paddingVertical="10dp"
+                        android:paddingStart="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:ignore="Autofill,LabelFor,RtlSymmetry,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#F4C4D5"
+                        android:paddingVertical="8dp"
+                        android:text="SID : "
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/edSid"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="2"
+                        android:paddingVertical="10dp"
+                        android:paddingStart="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlSymmetry,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#F7E7FA"
+                        android:paddingVertical="8dp"
+                        android:text="Division : "
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/edDiv"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="2"
+                        android:inputType="textPersonName"
+                        android:paddingVertical="10dp"
+                        android:paddingStart="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:ignore="Autofill,LabelFor,RtlSymmetry,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#F4C4D5"
+                        android:paddingVertical="8dp"
+                        android:text="Rno : "
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/edRno"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="2"
+                        android:inputType="number"
+                        android:paddingVertical="10dp"
+                        android:paddingStart="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:ignore="Autofill,LabelFor,RtlSymmetry,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/EducateData_Submit"
+                style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Tertiary"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@+id/table"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Save Data .."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,TextContrastCheck,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

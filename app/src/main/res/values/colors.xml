@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="my_Pirmary">#CFBBFE</color>
+
+    <color name="black">#FF000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple">#B068BC</color>
+
+    <color name="purple_light">#D97EE8</color>
+
+    <color name="purple_bg">#7E5A85</color>
+
+    <color name="orange">#958712</color>
+
+
+    <!--theme for menu lists in drawer-->
+    <style name="navigateTheme">
+
+        <item name="android:textColor">#ff000f</item>
+
+        <item name="colorPrimary">#000000</item>
+
+        <item name="colorControlHighlight">@color/orange</item>
+
+    </style>
+
+    //uodate btn
+
+    <style name="uodateTheme">
+
+        <item name="colorPrimary">#246422</item>
+
+    </style>
+
+
+    //delete btn
+
+    <style name="deleteTheme">
+
+        <item name="colorPrimary">#FF0000</item>
+
+    </style>
+
+</resources>

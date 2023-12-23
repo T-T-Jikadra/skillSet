@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Student_Dir.Student_ShowStaff_List">
+
+    <include layout="@layout/toolbar_backbtn" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_studstaff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <ListView
+            android:id="@+id/listview_Staff"
+            android:layout_width="409dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="58dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="61dp" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

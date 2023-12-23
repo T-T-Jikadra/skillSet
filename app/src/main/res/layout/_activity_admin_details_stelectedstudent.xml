@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?><!-- res/layout/activity_details.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <include layout="@layout/toolbar_backbtn" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTemp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="18dp"
+        android:background="@drawable/file_round_corner"
+        app:cardBackgroundColor="#E1E1E1"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="10dp"
+        app:cardElevation="12dp"
+        tools:ignore="MissingConstraints" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/AD_Fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="Fname"
+                android:textColor="@color/purple"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/AD_Surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AD_Fname"
+                android:layout_marginStart="25dp"
+                android:text="Surname"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/AD_Sid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AD_Surname"
+                android:layout_marginStart="25dp"
+                android:text="Sid"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <EditText
+                android:id="@+id/AD_Mono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AD_Sid"
+                android:layout_marginStart="25dp"
+                android:text="Mobile"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <EditText
+                android:id="@+id/AD_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AD_Mono"
+                android:layout_marginStart="25dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/AD_Dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AD_Email"
+                android:layout_marginStart="25dp"
+                android:text="dob"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/AD_Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AD_Dob"
+                android:layout_marginStart="25dp"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/AD_College"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AD_Gender"
+                android:layout_marginStart="25dp"
+                android:text="College"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_below="@+id/AD_College"
+                android:layout_marginBottom="6dp"
+                android:text="User Created On _ "
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_below="@+id/cardTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update The Data.." />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_below="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Delete The Record.." />
+
+</LinearLayout>

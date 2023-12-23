@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTemp"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="2dp"
+        android:background="@drawable/file_round_corner"
+        app:cardBackgroundColor="#E1E1E1"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp">
+
+        <TextView
+            android:id="@+id/text_assignment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="30sp"
+            android:paddingStart="22dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry,VisualLintOverlap" />
+
+        <ImageView
+            android:id="@+id/viewBTN"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:importantForAccessibility="no"
+            android:paddingStart="280dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/layout_icon_pdfopen"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

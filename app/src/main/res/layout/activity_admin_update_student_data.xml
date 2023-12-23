@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_backbtn" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/UpcardviewBg"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/file_round_corner"
+        app:cardBackgroundColor="#F6F5F5"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        tools:ignore="TextSizeCheck">
+
+        <RelativeLayout
+            android:id="@+id/Uplayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/Update_fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Fname"
+                android:textColor="#3F51B5"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:ignore="Autofill,HardcodedText,LabelFor"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Update_surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="45dp"
+                android:text="Surname"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/Update_sid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="85dp"
+                android:text="Sid"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText,LabelFor,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Update_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="110dp"
+                android:text="Mobile"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText,LabelFor,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Update_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="135dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText,LabelFor,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/Update_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="152dp"
+                android:text="dob"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/Update_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="178dp"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/Update_college"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="215dp"
+                android:text="College"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText,LabelFor,TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
+
+            <TextView
+                android:id="@+id/Update_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="240dp"
+                android:text="Course"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText,LabelFor,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Update_fees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="265dp"
+                android:text="Fees"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText,LabelFor,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Update_UCdtae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginBottom="13dp"
+                android:text="User Created On _ "
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText,TextSizeCheck" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnId_UpdateData"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="270dp"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:theme="@style/uodateTheme"
+        tools:ignore="HardcodedText,NotSibling" />
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_Pirmary"
+    android:padding="0dp"
+    tools:context=".Student_Dir.Student_GiveFeedback">
+
+    <include layout="@layout/toolbar_backbtn" />
+
+    <RelativeLayout
+        android:id="@+id/title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:background="#CEBAFD">
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="0dp"
+            android:text="Add new Feedback .."
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/SaveFeedbackBtnId"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:importantForAccessibility="no"
+            android:src="@drawable/icons8ok30"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar_layout"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="50dp"
+        android:background="@drawable/file_round_corner"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/feedback_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:hint="Feedback Title .."
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="#818080"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/feedback_content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:gravity="top"
+            android:hint="Feedback Description .."
+            android:importantForAutofill="no"
+            android:minLines="10"
+            android:padding="12dp"
+            android:textColor="#818080"
+            android:textColorHint="#818080"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+    </LinearLayout>
+
+</RelativeLayout>

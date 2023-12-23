@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_admindash"
+            android:icon="@drawable/drawer_icon_dashboard"
+            android:textColor="@color/black"
+            android:title="Admin Dashboard"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:id="@+id/nav_adminprofile"
+            android:icon="@drawable/drawer_icons_userlocation"
+            android:textColor="@color/black"
+            android:title="Profile"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:id="@+id/nav_adminstudlist"
+            android:icon="@drawable/drawer_icon_list"
+            android:title="List Of Students"
+            tools:ignore="HardcodedText" />
+
+    </group>
+
+    <item
+        android:title="Student Related .."
+        tools:ignore="HardcodedText">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_adminattend"
+                    android:icon="@drawable/drawer_icon_classroom"
+                    android:title="Attendence"
+                    tools:ignore="HardcodedText" />
+
+                <item
+                    android:id="@+id/nav_adminnotice"
+                    android:icon="@drawable/drawer_icon_notice"
+                    android:title="Add Notice"
+                    tools:ignore="HardcodedText" />
+
+                <item
+                    android:id="@+id/nav_adminfeedback"
+                    android:icon="@drawable/drawer_icon_feedback"
+                    android:title="See Feedback"
+                    tools:ignore="HardcodedText" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Admin Related .."
+        tools:ignore="HardcodedText">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_adminass"
+                    android:icon="@drawable/drawer_icon_task"
+                    android:title="Assignment" />
+
+                <item
+                    android:id="@+id/nav_adminstudymat"
+                    android:icon="@drawable/drawer_icon_books"
+                    android:title="Study Material"
+                    tools:ignore="HardcodedText" />
+
+                <item
+                    android:id="@+id/nav_admintimetable"
+                    android:icon="@drawable/drawer_icon_timetable"
+                    android:title="Time table"
+                    tools:ignore="HardcodedText" />
+
+                <item
+                    android:id="@+id/nav_adminexam"
+                    android:icon="@drawable/drawer_icon_schedule"
+                    android:title="Exams"
+                    tools:ignore="HardcodedText" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="About .."
+        tools:ignore="HardcodedText">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_adminains"
+                    android:icon="@drawable/drawer_icon_university"
+                    android:title="About Institute" />
+
+                <item
+                    android:id="@+id/nav_adminaapp"
+                    android:icon="@drawable/drawer_icon_mobileapp"
+                    android:title="About App"
+                    tools:ignore="HardcodedText" />
+
+                <item
+                    android:id="@+id/nav_adminaus"
+                    android:icon="@drawable/drawer_icon_people"
+                    android:title="About Us" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Others .."
+        tools:ignore="HardcodedText">
+
+        <menu>
+
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_adminshare"
+                    android:icon="@drawable/drawer_icon_share"
+                    android:title="Share" />
+
+                <item
+                    android:id="@+id/nav_adminlogout"
+                    android:icon="@drawable/drawer_icon_logout"
+                    android:title="Logout" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

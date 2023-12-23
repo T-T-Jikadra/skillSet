@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEBF6"
+    tools:context=".Student_Dir.Student_ShowAttendence">
+
+    <include layout="@layout/toolbar_backbtn" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <!--    card1   -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardItem1_Admin"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:foreground="@drawable/file_click_effect_attend"
+            app:cardCornerRadius="15dp"
+            tools:ignore="DuplicateClickableBoundsCheck,DuplicateClickableBoundsCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#F2C3F1ED"
+                android:orientation="vertical"
+                tools:ignore="TextSizeCheck,VisualLintBounds">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Present .."
+                    android:textAlignment="center"
+                    android:textColor="#2CBC31"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="89"
+                    android:textAlignment="center"
+                    android:textColor="#0D7811"
+                    android:textSize="45sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--        middle-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardItem2_Admin"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/cardItem1_Admin"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:foreground="@drawable/file_click_effect_attend"
+            app:cardCornerRadius="15dp"
+            tools:ignore="DuplicateClickableBoundsCheck,DuplicateClickableBoundsCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#E8EDDEDE"
+                android:orientation="vertical"
+                tools:ignore="TextSizeCheck,VisualLintBounds">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Absent .."
+                    android:textAlignment="center"
+                    android:textColor="#F86D63"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="11"
+                    android:textAlignment="center"
+                    android:textColor="#F44336"
+                    android:textSize="45sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--    card3   -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardItem3_Admin"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/cardItem2_Admin"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:foreground="@drawable/file_click_effect_attend"
+            app:cardCornerRadius="15dp"
+            tools:ignore="DuplicateClickableBoundsCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#E8D6DBF4"
+                android:orientation="vertical"
+                tools:ignore="TextSizeCheck,VisualLintBounds">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Total Lectures .."
+                    android:textAlignment="center"
+                    android:textColor="#2EBDFD"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="100"
+                    android:textAlignment="center"
+                    android:textColor="#2196F3"
+                    android:textSize="45sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

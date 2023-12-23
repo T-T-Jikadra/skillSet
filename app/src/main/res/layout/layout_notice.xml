@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="1dp"
+    android:background="@drawable/file_round_corner"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/note_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:paddingHorizontal="5dp"
+        android:text="title"
+        android:textColor="#24649E"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/note_content_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingHorizontal="5dp"
+        android:text="this can be notice content that can be long"
+        android:textColor="#434343"
+        android:textSize="17sp"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/note_timestamp_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="right"
+        android:text="note Created On"
+        android:textColor="#AEAEAE"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/note_divider"
+        MaterialDivier_dividerColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E2FA"
+    tools:context="._MustHave.select_TypeOf_User">
+
+    <!--    text  -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:text="Who Are You ?"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="450dp"
+        android:padding="10dp">
+
+        <!--    1st card-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnAdmin"
+            android:layout_width="135dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:foreground="@drawable/file_click_effect"
+            app:cardCornerRadius="25dp"
+            tools:ignore="DuplicateClickableBoundsCheck,DuplicateClickableBoundsCheck,NotSibling,SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                tools:ignore="VisualLintBounds">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/imagebtn1_Admin"
+                    android:layout_width="125dp"
+                    android:layout_height="120dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/icon_choose_admin_"
+                    tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--  text one  -->
+
+        <!--  2nd card  -->
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnstud"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="36dp"
+            android:text="Admin !"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnstud"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20sp"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:foreground="@drawable/file_click_effect"
+            app:cardCornerRadius="25dp"
+            tools:ignore="DuplicateClickableBoundsCheck,DuplicateClickableBoundsCheck,SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                tools:ignore="VisualLintBounds">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/studlottie"
+                    android:layout_width="125dp"
+                    android:layout_height="115dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginVertical="8dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_rawRes="@raw/animation_selectstud"
+                    tools:ignore="VisualLintBounds" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnstud"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="50dp"
+            android:text="Student !"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,NotSibling,SpUsage,TextSizeCheck" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

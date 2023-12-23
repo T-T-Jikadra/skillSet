@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/my_Pirmary"
+    android:paddingLeft="15dp"
+    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+    <ImageView
+        android:id="@+id/imageview_studdrawer"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/titletext_stud"
+        android:layout_marginStart="13dp"
+        android:src="@drawable/img_rb_male"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/titletext_stud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/subtext_stud"
+        android:layout_marginStart="10dp"
+        android:fontFamily="monospace"
+        android:text="Student Index"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/subtext_stud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginBottom="5dp"
+        android:text="slogan_name"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+
+<!--    <ImageView-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="false"-->
+<!--        android:src="@drawable/img_student_login_bg"-->
+<!--        tools:ignore="ContentDescription,ImageContrastCheck" />-->
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Student_Dir.Student_ProfileTab">
+
+    <include layout="@layout/toolbar_backbtn" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:outlineAmbientShadowColor="@color/purple"
+        android:outlineSpotShadowColor="#86C126"
+        app:tabIndicatorColor="#CFBBFE"
+        app:tabRippleColor="#CFBBFE"
+        app:tabSelectedTextColor="#291CDD"
+        app:tabTextColor="#000000">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/purple"
+            android:text="Personal Details"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Educational Details"
+            tools:ignore="HardcodedText" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_Profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout_Profile" />
+</RelativeLayout>

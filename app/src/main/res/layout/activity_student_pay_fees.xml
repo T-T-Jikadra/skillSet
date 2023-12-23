@@ -1,0 +1,78 @@
+    <!-- res/layout/activity_fees.xml -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_backbtn" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/file_round_outline_fees"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/feesptotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Total Amount : "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/feespaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feesptotal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Paid : "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/remfees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feespaid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="remaining : "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/divideFees"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/remfees"
+                android:layout_marginHorizontal="18dp"
+                android:layout_marginTop="40dp"
+                android:background="#915A09" />
+
+            <Button
+                android:id="@+id/btnPayFees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divideFees"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="25dp"
+                android:text="Tap Pay Your Fees.."
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </LinearLayout>

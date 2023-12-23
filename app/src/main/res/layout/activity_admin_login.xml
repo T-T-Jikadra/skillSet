@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Student_Dir.Student_Login">
+
+    <ImageView
+        android:id="@+id/bgimg_adminlogin"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/admin_login_bgimg" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/bgimg_adminlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/file_round_corner"
+        app:cardBackgroundColor="#E2EAE8"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="80dp"
+        tools:ignore="MissingConstraints,TextSizeCheck">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login As Admin !"
+                    android:textAlignment="center"
+                    android:textColor="#B168BD"
+                    android:textSize="32dp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtlayout_admin_id"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:hint="Admin Id .."
+                    android:textColorHint="#727070"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxStrokeColor="#9C27B0"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextColor="@color/black"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="#E0C1E6"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@drawable/icon_error"
+                    app:helperText="* Default Id : admin@gmail.com"
+                    app:helperTextTextColor="#A10707"
+                    app:hintTextColor="#9C27B0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.252"
+                    app:startIconCheckable="true"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_admin_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/reg_icons_adminid"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:text=""
+                        android:textColor="#727070"
+                        android:textColorHint="@color/black"
+                        tools:ignore="TextContrastCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtlayout_admin_pwd"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Password .."
+                    android:textColorHint="#727070"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:boxStrokeColor="#9C27B0"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="15"
+                    app:counterTextColor="@color/black"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="#E0C1E6"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@drawable/icon_error"
+                    app:helperText="Password : ******** "
+                    app:helperTextTextColor="#A10707"
+                    app:hintTextColor="#9C27B0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.252"
+                    app:prefixTextColor="@color/black"
+                    app:startIconCheckable="true"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_admin_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/reg_icons_lock"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPassword"
+                        android:maxLength="15"
+                        android:text=""
+                        android:textColor="#727070"
+                        android:textColorHint="@color/black"
+                        tools:ignore="TextContrastCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_adminLogin"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Login"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/byStud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="11dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:backgroundTint="@color/white"
+        android:text=" - Click here !"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextSizeCheck,UnknownId" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginBottom="25dp"
+        android:text="Are You Studnent ? "
+        android:textColor="@color/purple"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+</RelativeLayout>

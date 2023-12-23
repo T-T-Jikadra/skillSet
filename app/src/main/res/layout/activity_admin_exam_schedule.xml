@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Admin_Dir.Admin_ExamSchedule">
+
+    <include layout="@layout/toolbar_backbtn" />
+
+    <!-- Your Toolbar -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="58dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Image Name EditText -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtlayoutId_AdminExam_ImageName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:hint="Image Name.."
+                android:textColorHint="#727070"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxStrokeColor="#9C27B0"
+                app:counterEnabled="true"
+                app:counterMaxLength="25"
+                app:counterTextColor="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="#E0C1E6"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/icon_error"
+                app:helperText="* Required"
+                app:helperTextTextColor="#F60000"
+                app:hintTextColor="#9C27B0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.252"
+                app:startIconCheckable="true"
+                app:startIconDrawable="@drawable/icon_person"
+                app:startIconTint="@color/black"
+                tools:ignore="HardcodedText,TextSizeCheck">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtId_AdminExam_ImageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:maxLength="25"
+                    android:textColor="#727070"
+                    android:textColorHint="@color/black"
+                    tools:ignore="TextContrastCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Select Image Button -->
+            <Button
+                android:id="@+id/btnId_select_image_AdminExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Select Image"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <!-- Image Preview -->
+            <ImageView
+                android:id="@+id/imgid_preview_AdminExam"
+                android:layout_width="300dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_uploadimage"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <!-- Upload Image Button -->
+            <Button
+                android:id="@+id/btnId_upload_image_AdminExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Upload Image"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <!-- Uploaded Images -->
+            <GridView
+                android:id="@+id/gridviewId_images_AdminExam"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:horizontalSpacing="25dp"
+                android:numColumns="1"
+                android:scrollbars="vertical"
+                android:verticalSpacing="10dp"
+                tools:ignore="NestedScrolling" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Admin_Dir.Admin_Profile">
+
+    <include layout="@layout/toolbar_backbtn" />
+
+    <ImageView
+        android:id="@+id/imageV"
+        android:layout_width="380dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/img_adminprofile_bg"
+        tools:ignore="ContentDescription" />
+
+    <TableLayout
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:divider="?android:attr/listDivider"
+        android:showDividers="middle"
+        android:stretchColumns="1"
+        tools:ignore="UselessParent,TextSizeCheck">
+
+        <!-- TableRow for each set of information -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#F7E7FA"
+                android:paddingVertical="8dp"
+                android:text="ID : "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/edFname"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:text="admin"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlSymmetry,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#F4C4D5"
+                android:paddingVertical="8dp"
+                android:text="Surname : "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/edsurname"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:text="admin"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlSymmetry,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#F4C4D5"
+                android:paddingVertical="8dp"
+                android:text="Mobile Number : "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/edmono"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:text="+91 **********"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlSymmetry,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#F7E7FA"
+                android:paddingVertical="8dp"
+                android:text="Email Address : "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/edmail"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:text="contact@admin.com"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlSymmetry,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#F4C4D5"
+                android:paddingVertical="8dp"
+                android:text="Birth Date : "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/edbdate"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:text="01-01-2000"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlSymmetry,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#F7E7FA"
+                android:paddingVertical="8dp"
+                android:text="Gender : "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/edgen"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:text="Male"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlSymmetry,TouchTargetSizeCheck" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

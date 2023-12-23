@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_studdash"
+            android:icon="@drawable/drawer_icon_dashboard"
+            android:textColor="@color/black"
+            android:title=" Student Dashboard"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:id="@+id/nav_studprofile"
+            android:icon="@drawable/drawer_icons_userlocation"
+            android:title="Profile"
+            tools:ignore="HardcodedText" />
+
+    </group>
+
+    <item
+
+        android:title="Student Corner .."
+        tools:ignore="HardcodedText">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_studattend"
+                    android:icon="@drawable/drawer_icon_classroom"
+                    android:title="Attendence"
+                    tools:ignore="HardcodedText" />
+
+                <item
+                    android:id="@+id/nav_studnotice"
+                    android:icon="@drawable/drawer_icon_notice"
+                    android:title="Notices"
+                    tools:ignore="HardcodedText" />
+
+                <item
+                    android:id="@+id/nav_studass"
+                    android:icon="@drawable/drawer_icon_task"
+                    android:title="Assignments" />
+
+                <item
+                    android:id="@+id/nav_studstudymat"
+                    android:icon="@drawable/drawer_icon_books"
+                    android:title="Study Material" />
+
+
+                <item
+                    android:id="@+id/nav_studtimetable"
+                    android:icon="@drawable/drawer_icon_timetable"
+                    android:title="Check Time table" />
+
+                <item
+                    android:id="@+id/nav_studexam"
+                    android:icon="@drawable/drawer_icon_schedule"
+                    android:title="Scheduled Exams" />
+
+                <item
+                    android:id="@+id/nav_studfees"
+                    android:icon="@drawable/drawer_icon_rupee"
+                    android:title="Fees" />
+
+                <item
+                    android:id="@+id/nav_studstaff"
+                    android:icon="@drawable/drawer_icon_stafflist"
+                    android:title="Staff List" />
+
+                <item
+                    android:id="@+id/nav_studfeedback"
+                    android:icon="@drawable/drawer_icon_feedback"
+                    android:title="Submit Feedback" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item
+
+        android:title="About .."
+        tools:ignore="HardcodedText">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_studains"
+                    android:icon="@drawable/drawer_icon_university"
+                    android:title="About Institute" />
+
+                <item
+                    android:id="@+id/nav_studaapp"
+                    android:icon="@drawable/drawer_icon_mobileapp"
+                    android:title="About App" />
+
+                <item
+                    android:id="@+id/nav_studaus"
+                    android:icon="@drawable/drawer_icon_people"
+                    android:title="About Us" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Share"
+        tools:ignore="HardcodedText">
+
+        <menu>
+
+            <group android:checkableBehavior="none">
+
+                <item
+
+                    android:id="@+id/nav_studshare"
+                    android:icon="@drawable/drawer_icon_share"
+                    android:title="Share"
+                    tools:ignore="HardcodedText" />
+
+                <item
+                    android:id="@+id/nav_studlogout"
+                    android:icon="@drawable/drawer_icon_logout"
+                    android:title="Logout" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

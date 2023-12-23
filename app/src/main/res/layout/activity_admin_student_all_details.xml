@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_backbtn" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewBg"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="100sp"
+        android:background="@drawable/file_round_corner"
+        app:cardBackgroundColor="#F6F5F5"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="10dp"
+        tools:ignore="TextSizeCheck">
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tempFname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16sp"
+                android:text="Fname :"
+                android:textColor="#919191"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/text1_fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/tempFname"
+                android:text="Fname"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tempSurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1_fname"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Surname :"
+                android:textColor="#919191"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/text1_surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1_fname"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tempSurname"
+                android:text="Surname"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tempSid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempSurname"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Sid :"
+                android:textColor="#919191"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/text1_sid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1_surname"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tempSid"
+                android:text="Sid"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tempMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempSid"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Mobile No :"
+                android:textColor="#919191"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/text1_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempSid"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tempMobile"
+                android:text="Mobile"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tempEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempMobile"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Email Id:"
+                android:textColor="#919191"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/text1_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempEmail"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tempdob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1_email"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Date Of birth :"
+                android:textColor="#919191"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/text1_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1_email"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tempdob"
+                android:text="dob"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tempGen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempdob"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Gender :"
+                android:textColor="#919191"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/text1_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempdob"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/tempGen"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tempClg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempGen"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Department :"
+                android:textColor="#919191"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/text1_college"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempClg"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:text="Dept"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tempCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1_college"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Course :"
+                android:textColor="#919191"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/text1_courseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1_college"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tempCourse"
+                android:text="Course"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tempfees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempCourse"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Fees Paid :"
+                android:textColor="#919191"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/text1_fees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempCourse"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tempfees"
+                android:text="Fees"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/text1_UCdtae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempfees"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:text="User Created On"
+                android:textColor="#919191"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_UpdateStudData"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardviewBg"
+            android:layout_marginStart="35dp"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:theme="@style/uodateTheme"
+            tools:ignore="HardcodedText,NotSibling,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_DeleteStudData"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="30sp"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:theme="@style/deleteTheme"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,TextContrastCheck" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

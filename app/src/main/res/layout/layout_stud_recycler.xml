@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTemp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="9dp"
+        android:background="@drawable/file_round_corner"
+        app:cardBackgroundColor="#E1E1E1"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/text1_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:text="Fname"
+            android:textColor="#3F51B5"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/text1_sid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:text="Sid"
+            android:textColor="#424242"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/text1_UCdtae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginBottom="6dp"
+            android:text="User Created On _ "
+            android:textColor="#717171"
+            android:textSize="11dp"
+            tools:ignore="HardcodedText,SpUsage,TextContrastCheck,TextSizeCheck" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text1_surname"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="30dp"-->
+        <!--            android:layout_marginTop="45dp"-->
+        <!--            android:text="Surname"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="17dp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text1_mobile"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="105dp"-->
+        <!--            android:layout_marginTop="95dp"-->
+        <!--            android:text="Mobile"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="17dp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text1_email"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="105dp"-->
+        <!--            android:layout_marginTop="118dp"-->
+        <!--            android:text="Email"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="17dp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text1_dob"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="105dp"-->
+        <!--            android:layout_marginTop="142dp"-->
+        <!--            android:text="dob"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="17dp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text1_gender"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="105dp"-->
+        <!--            android:layout_marginTop="165dp"-->
+        <!--            android:text="Gender"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="17dp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/text1_college"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="105dp"-->
+        <!--            android:layout_marginTop="189dp"-->
+        <!--            android:text="College"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="17dp" />-->
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

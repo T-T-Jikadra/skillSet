@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEAFB"
+    tools:context=".Admin_Dir.Admin_TakeAttendence">
+
+    <include layout="@layout/toolbar_backbtn" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fetchlottie"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        android:text="Fetching Attendence Data From The Server .. Kindly Wait ...."
+        android:textAlignment="center"
+        android:textColor="#8C6DD5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,VisualLintOverlap" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fetchlottie"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/animation_fetch_data"
+        tools:ignore="VisualLintBounds" />
+
+</RelativeLayout>
